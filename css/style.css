@@ -77,16 +77,26 @@ button {
 
 /*dropdown*/
 .dropdown {
-    /*nascondere dropdown*/
     position: absolute;
     top: 140%;
     left: -150%;
     width: max-content;
     box-shadow: 0px 1px 10px -2px #d9e1e6;
+
+    /*1.nascondere dropdown*/
+    display: none;
+}
+
+.dropdown.active {
+    display: block;
 }
 
 .dropdown .menu li {
     display: block;
     text-align: left;
     padding: 15px 30px 20px 0px;
+}
+
+.dropdown sup {
+    color: #eb008e;
 }
