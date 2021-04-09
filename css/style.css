@@ -21,7 +21,7 @@ ul {
 /*container*/
 .container {
     /*background-color: aqua;*/
-    max-width: 1000px;
+    max-width: 1050px;
     margin: auto;
 }
 
@@ -32,26 +32,60 @@ nav {
 
 .logo {
     width: 10%;
-    
+    padding-top: 5px;
 }
 
 .left_menu {
-    width: 25%;
+    width: 23%;
+    padding-top: 11px;
 }
 
 .right_menu {
-    width: 65%;
+    width: 67%;
     text-align: right;
 }
-.menu {
-    line-height: 30px;
-}
+
 .menu li {
     display: inline-block;
     margin-left: 35px;
+    position: relative;
 }
 
 .menu a {
-    color: #bec3c6;
+    color: #a1a7ac;
     text-decoration: none;
 } 
+
+.menu a:hover {
+    color: black;
+}
+
+.fas {
+    font-size: 7px;
+    color: #a1a7ac;
+}
+
+button {
+    border: 0px;
+    border-radius: 20px;
+    padding: 11px 21px;
+    color: white;
+    background: #eb008e;
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+/*dropdown*/
+.dropdown {
+    /*nascondere dropdown*/
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: lightblue;
+    width: max-content
+}
+
+.dropdown .menu li {
+    display: block;
+    text-align: left;
+}
